@@ -1,4 +1,9 @@
-txt.innerHTML = meta;
-$toolTip.innerHTML = tooltipText;
-var regex = new RegExp('tooltip-show' + '\\s*', 'gi');
-$toolTip.innerHTML = tooltipText;
+var x = 2;
+// Bad
+if ((x = getX()) === 3) {
+    alert("3!");
+}
+
+function getX() {
+    return x;
+}
